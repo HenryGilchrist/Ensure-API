@@ -14,7 +14,8 @@ const app = express();
 app.use(express.json());
 
 const allowedOrigins = [
-  'https://henrygilchrist.github.io/Ensure/'
+  'https://henrygilchrist.github.io/Ensure/',
+  'https://henrygilchrist.github.io'
 ];
 
 app.use(cors({
