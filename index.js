@@ -61,7 +61,7 @@ function validateOperator(operator){
 }
 
 function validateStringFilter(value, operator){
-  const error = `Invalid value of ${value} for ${operator} operation`;
+  const error = `Invalid operator ${operator} for value ${value}`;
 
   if(!valueIsDateString(value)){
     if(operator != 'eq') throw new Error(error);
