@@ -56,12 +56,12 @@ function validateProperty(property){
 
 function validateOperator(operator){
   if (!Object.values(filterOperations).includes(operator)) {
-        throw new Error(`Invalid operator: ${operator} for property: ${property}`);
+        throw new Error(`Invalid operator: ${operator}`);
       }
 }
 
 function validateStringFilter(value, operator){
-  const error = `Invalid value of ${value} for ${operator} operation on property ${property}`;
+  const error = `Invalid value of ${value} for ${operator} operation`;
 
   if(!valueIsDateString(value)){
     if(operator != 'eq') throw new Error(error);
