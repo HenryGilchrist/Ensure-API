@@ -60,7 +60,7 @@ function validateOperator(operator){
       }
 }
 
-function validateStringFilter(){
+function validateStringFilter(value, operator){
   const error = `Invalid value of ${value} for ${operator} operation on property ${property}`;
 
   if(!valueIsDateString(value)){
